@@ -346,8 +346,9 @@ public class FCMService extends FirebaseMessagingService implements PushConstant
       if (title == null || title.isEmpty()) {
         extras.putString(TITLE, getAppName(this));
       }
-
-      createNotification(context, extras);
+      
+      // EDIT DM
+     // createNotification(context, extras);
     }
 
     if (!PushPlugin.isActive() && "1".equals(forceStart)) {
